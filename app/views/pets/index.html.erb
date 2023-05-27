@@ -1,0 +1,43 @@
+<ul>
+  <% @pets.each do |pet| %>
+    <li class="pet-card">
+      <h3 class="pet-name"><%= pet[:name] %></h3>
+      <p class="pet-species"><%= pet[:species] %></p>
+      <p class="pet-description"><%= pet[:description] %></p>
+      <img class="pet-image" src="<%= pet[:picUrl] %>" alt="<%= pet[:name] %>">
+    </li>
+  <% end %>
+</ul>
+
+<style>
+  .pet-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 16px;
+    list-style: none;
+  }
+
+  .pet-name {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+  }
+
+  .pet-species {
+    color: lightgrey;
+    font-size: 0.8em;
+    margin-bottom: 8px;
+  }
+
+  .pet-description {
+    color: black;
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+
+  .pet-image {
+    width: 100%;
+    height: auto;
+  }
+</style>
