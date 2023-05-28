@@ -4,7 +4,8 @@ class PetsController < ApplicationController
     @pets = [
       {
           "name": "Rex",
-          "species": "Rottweiler",
+          "race": "Dog",
+          "breed": "Rottweiler",
           "birthday": "20017-11-11",
           "favoriteFood": "Chicken",
           "picUrl": "https://www.dogbreedslist.info/uploads/dog-pictures/french-bulldog-2.jpg",
@@ -14,7 +15,8 @@ class PetsController < ApplicationController
       },
       {
           "name": "Fido",
-          "species": "Greyhound",
+          "race": "Dog",
+          "breed": "Greyhound",
           "birthday": "2008-11-11",
           "favoriteFood": "Liver",
           "picUrl": "http://www.gpamass.com/s/img/emotionheader713297504.jpg",
@@ -24,7 +26,8 @@ class PetsController < ApplicationController
       },
       {
           "name": "Rolfe",
-          "species": "Pitbull",
+          "race": "Dog",
+          "breed": "Pitbull",
           "birthday": "2008-11-11",
           "favoriteFood": "Beef",
           "picUrl": "https://www.pocketpitbull.com/wp-content/uploads/2017/03/blue-staffy-pitbull-370x208.jpg",
@@ -34,7 +37,8 @@ class PetsController < ApplicationController
       },
       {
           "name": "Princhi",
-          "species": "West Highland White Terrier",
+          "race": "Dog",
+          "breed": "West Highland White Terrier",
           "birthday": "2008-11-11",
           "favoriteFood": "Fish",
           "picUrl": "https://www.dogbreedslist.info/uploads/dog-pictures/yorkshire-terrier-2.jpg",
@@ -43,7 +47,8 @@ class PetsController < ApplicationController
       },
       {
           "name": "Mr. Fluffles",
-          "species": "Poodle",
+          "race": "Dog",
+          "breed": "Poodle",
           "birthday": "2008-11-11",
           "favoriteFood": "Chicken",
           "picUrl": "https://www.dogbreedslist.info/uploads/dog-pictures/poodle-2-3.jpg",
@@ -53,7 +58,8 @@ class PetsController < ApplicationController
       },
       {
           "name": "Santa's Little Helper",
-          "species": "Mixed",
+          "race": "Elf",
+          "breed": "Mixed",
           "birthday": "2008-11-11",
           "favoriteFood": "Pork",
           "picUrl": "https://www.dogbreedslist.info/uploads/dog-pictures/dachshund-2.jpg",
@@ -63,7 +69,8 @@ class PetsController < ApplicationController
       },
       {
           "name": "Alf",
-          "species": "Alien",
+          "race": "Alien",
+          "breed": "Alien",
           "birthday": "2008-11-11",
           "favoriteFood": "Cats",
           "picUrl": "https://www.dogbreedslist.info/uploads/dog-pictures/pembroke-welsh-corgi-2.jpg",
@@ -73,7 +80,8 @@ class PetsController < ApplicationController
       },
       {
           "name": "Bubba",
-          "species": "Mastiff",
+          "race": "Dog",
+          "breed": "Mastiff",
           "birthday": "2008-11-11",
           "favoriteFood": "Dragon",
           "picUrl": "https://www.dogbreedslist.info/uploads/dog-pictures/yorkshire-terrier-2-2.jpg",
