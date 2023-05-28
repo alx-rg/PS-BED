@@ -2,8 +2,11 @@
   <% @pets.each do |pet| %>
     <li class="pet-card">
       <h3 class="pet-name"><%= pet[:name] %></h3>
-      <p class="pet-breed">Race:<%= pet[:race] %> Breed:<%= pet[:breed] %></p>
-      <p class="pet-description"><%= pet[:description] %></p>
+      <p class="pet-breed">Race:<%= pet[:race] %></p>
+      <p class="pet-breed">Breed:<%= pet[:breed] %></p>
+      <p class="pet-price">Price: <%= priceless(pet) %></p>
+      <p class="pet-description"><%= truncate(pet[:description], length:35, separator: ' ') %></p>
+      <p><%= loveFetch(pet)%></p>
       <img class="pet-image" src="<%= pet[:picUrl] %>" alt="<%= pet[:name] %>">
     </li>
   <% end %>
@@ -25,6 +28,11 @@
   }
 
   .pet-breed {
+    color: grey;
+    font-size: 0.8em;
+    margin-bottom: 8px;
+  }
+  .pet-price {
     color: lightgrey;
     font-size: 0.8em;
     margin-bottom: 8px;
