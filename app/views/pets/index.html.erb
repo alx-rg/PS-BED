@@ -1,51 +1,19 @@
-<ul>
-  <% @pets.each do |pet| %>
-    <li class="pet-card">
-      <h3 class="pet-name"><%= pet[:name] %></h3>
-      <p class="pet-breed">Race:<%= pet[:race] %></p>
-      <p class="pet-breed">Breed:<%= pet[:breed] %></p>
-      <p class="pet-price">Price: <%= priceless(pet) %></p>
-      <p class="pet-description"><%= truncate(pet[:description], length:35, separator: ' ') %></p>
-      <p><%= loveFetch(pet)%></p>
-      <img class="pet-image" src="<%= pet[:picUrl] %>" alt="<%= pet[:name] %>">
-    </li>
-  <% end %>
-</ul>
-
-<style>
-  .pet-card {
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 16px;
-    margin-bottom: 16px;
-    list-style: none;
-  }
-
-  .pet-name {
-    font-size: 1.5em;
-    margin-bottom: 8px;
-  }
-
-  .pet-breed {
-    color: grey;
-    font-size: 0.8em;
-    margin-bottom: 8px;
-  }
-  .pet-price {
-    color: lightgrey;
-    font-size: 0.8em;
-    margin-bottom: 8px;
-  }
-
-  .pet-description {
-    color: black;
-    font-size: 1em;
-    margin-bottom: 8px;
-  }
-
-  .pet-image {
-    width: 100%;
-    height: auto;
-  }
-</style>
+<div class="container">
+  <div class="row">
+    <% @pets.each do |pet| %>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <section class='pet'>
+          <div class='summary'>
+            <h2><%= pet[:name] %></h2>
+            <p class="breed">Race:<%= pet[:race] %></p>
+            <p class="breed">Breed:<%= pet[:breed] %></p>
+            <p class="price">Price: <%= priceless(pet) %></p>
+            <p class="description"><%= truncate(pet[:description], length:40, separator: ' ') %></p>
+            <p><%= loveFetch(pet)%></p>
+            <img class="image" src="<%= pet[:picUrl] %>" alt="<%= pet[:name] %>">
+          </div>
+        </section>
+      </div>
+    <% end %>
+  </div>
+</div>
