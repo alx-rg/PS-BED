@@ -1,7 +1,8 @@
 <div class="container">
   <div class="row">
-    <% @pets.each do |pet| %>
-      <div class="col-lg-4 col-md-6 col-sm-12">
+    <% if @pets.any? %>
+      <% @pets.each do |pet| %>
+        <div class="col-lg-4 col-md-6 col-sm-12">
         <section class='pet'>
           <div class='summary'>
             <h2><%= pet[:name] %></h2>
@@ -12,8 +13,15 @@
             <p><%= loveFetch(pet)%></p>
             <img class="image" src="<%= pet[:picUrl] %>" alt="<%= pet[:name] %>">
           </div>
-        </section>
+          </section>
+        </div>
+      <% end %>
+    <% else %>
+      <div class="col-12">
+        <p>Nothing found, try your search again!</p>
       </div>
     <% end %>
   </div>
 </div>
+
+<%= paginate @pets %>

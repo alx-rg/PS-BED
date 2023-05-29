@@ -6,6 +6,7 @@ RSpec.describe Pet, type: :model do
   before(:all) do
     @pet1 = Pet.create(name: "Moose Doodle", race: "Dog", breed: "Golden Doodle", favoriteFood: "Raw Meat", description: "The best doggo")
     @pet2 = Pet.create(name: "Buddy", race: "Dog", breed: "Labrador Retriever", favoriteFood: "Kibble", description: "A friendly dog")
+    @pet3 = Pet.create(name: "Buddy", race: "Dog", breed: "Labrador Retriever", favoriteFood: "Kibble", description: "A friendly dog")
   end
 
   after(:all) do
@@ -33,4 +34,11 @@ RSpec.describe Pet, type: :model do
       expect(pets).to include(@pet1, @pet2)
     end
   end
+
+  # Testing Pagination:
+  it 'search method should return paginated results' do
+    search_results = Pet.search('').page(1).per(3)
+    expect(search_results.count).to eq(3)
+  end
+
 end
