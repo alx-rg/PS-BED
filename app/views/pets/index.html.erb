@@ -5,7 +5,7 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
         <section class='pet'>
           <div class='summary'>
-            <h2><%= pet[:name] %></h2>
+            <h2><%= link_to(pet[:name], pet_path(pet)) %></h2>
             <p class="breed">Race:<%= pet[:race] %></p>
             <p class="breed">Breed:<%= pet[:breed] %></p>
             <p class="price">Price: <%= priceless(pet) %></p>
@@ -19,6 +19,7 @@
     <% else %>
       <div class="col-12">
         <p>Nothing found, try your search again!</p>
+        <%= link_to "Home", pets_path %>
       </div>
     <% end %>
   </div>

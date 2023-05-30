@@ -1,0 +1,19 @@
+<section class="pet-details">
+  <div class="details">
+    <div class='summary'>
+      <h2><%= @pet.name %></h2>
+      <img class="image" src="<%= @pet.picUrl %>" alt="<%= @pet.name %>">
+      <p class="breed">Race:<%= @pet.race %></p>
+      <p class="breed">Breed:<%= @pet.breed %></p>
+      <p class="food">Food:<%= @pet.favoriteFood %></p>
+      <p class="price">Price: <%= priceless(@pet) %></p>
+      <p class="description"><%= @pet.description %></p>
+      <img class="image" src="<%= @pet.picUrlSq %>" alt="<%= @pet.name %>">
+      <p>By the way, <%= loveFetch(@pet)%></p>
+    </div>
+  </div>
+  <section class="admin">
+    <%= link_to "Home", pets_path, class: "button"  %>
+    <%= link_to "Edit", edit_pet_path(@pet), class: "button" %>
+  </section>
+</section>

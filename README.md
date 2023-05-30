@@ -29,6 +29,8 @@ When using pagination my query returns `http://127.0.2.3:3000/pets?page=2` for p
 
 
 #### #3 Adding Validations
+
+
 #### #4 Error and success messages
 #### #5 Uploading images and files
 #### #6 Adding payment gateways like Stripe
