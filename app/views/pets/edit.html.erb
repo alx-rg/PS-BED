@@ -1,38 +1,3 @@
 <h1> Editing <%= @pet.name %></h1>
 
-
-<%= form_with(model: @pet) do |form| %>
-
-  <%= form.label :name %>
-  <%= form.text_field :name %>
-
-  <%= form.label :race %>
-  <%= form.text_field :race %>
-
-  <%= form.label :breed %>
-  <%= form.text_field :breed %>
-
-  <%= form.label :birthday %>
-  <%= form.date_field :birthday %>
-
-  <%= form.label :favoriteFood %>
-  <%= form.text_field :favoriteFood %>
-
-  <%= form.label :picUrl %>
-  <%= form.text_field :picUrl %>
-
-  <%= form.label :price %>
-  <%= form.number_field :price %>
-
-  <%= form.label :picUrlSq %>
-  <%= form.text_field :picUrlSq %>
-
-  <%= form.label :description %>
-  <%= form.text_area :description %>
-
-  <%= form.label :fetch %>
-  <%= form.check_box :fetch %>
-
-  <%= form.submit %>
-
-<% end %>
+<%= render "form", pet: @pet %>

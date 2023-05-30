@@ -22,12 +22,33 @@ class PetsController < ApplicationController
 
   def update
     @pet = Pet.find(params[:id])
-    pet_params =
-      params.require(:pet).
-        permit(:name, :race, :breed, :birthday, :favoriteFood, :picUrl, :price, :picUrlSq, :description, :fetch)
     @pet.update(pet_params)
     redirect_to @pet
-    # redict_to pet_path(@pet)
+    # redirect_to pet_path(@pet)
+  end
+
+  def new
+    @pet = Pet.new
+  end
+
+  def create
+
+    @pet = Pet.new(pet_params)
+    @pet.save
+    redirect_to @pet
+  end
+
+  def destroy
+    @pet = Pet.find(params[:id])
+    @pet.destroy
+    redirect_to pets_url, status: :see_other
+    # see_other is a 303 status code
+  end
+
+  private
+
+  def pet_params
+    params.require(:pet).permit(:name, :race, :breed, :birthday, :favoriteFood, :picUrl, :price, :picUrlSq, :description, :fetch)
   end
 
 end

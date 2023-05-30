@@ -24,5 +24,11 @@
     <% end %>
   </div>
 </div>
-
-<%= paginate @pets %>
+<div class="row">
+  <div class="col-12">
+    <%= paginate @pets %>
+  </div>
+</div>
+<section class="admin">
+  <%= link_to "Add New Pet", new_pet_path, class: "button" %>
+</section>

@@ -15,5 +15,8 @@
   <section class="admin">
     <%= link_to "Home", pets_path, class: "button"  %>
     <%= link_to "Edit", edit_pet_path(@pet), class: "button" %>
+    <%= link_to "Delete", @pet, class: "button",
+      data: {turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
+    <%= link_to "Delete", pet_path(@pet), method: :delete, data: { confirm: "Are you sure?" }, class: "button" %>
   </section>
 </section>
