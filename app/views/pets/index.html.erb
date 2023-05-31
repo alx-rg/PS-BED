@@ -6,12 +6,12 @@
         <section class='pet'>
           <div class='summary'>
             <h2><%= link_to(pet[:name], pet_path(pet)) %></h2>
+            <img class="image" src="<%= pet[:picUrl] %>" alt="<%= pet[:name] %>">
             <p class="breed">Race:<%= pet[:race] %></p>
             <p class="breed">Breed:<%= pet[:breed] %></p>
             <p class="price">Price: <%= priceless(pet) %></p>
             <p class="description"><%= truncate(pet[:description], length:40, separator: ' ') %></p>
             <p><%= loveFetch(pet)%></p>
-            <img class="image" src="<%= pet[:picUrl] %>" alt="<%= pet[:name] %>">
           </div>
           </section>
         </div>

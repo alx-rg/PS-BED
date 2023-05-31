@@ -22,9 +22,11 @@ class PetsController < ApplicationController
 
   def update
     @pet = Pet.find(params[:id])
-    @pet.update(pet_params)
-    redirect_to @pet
-    # redirect_to pet_path(@pet)
+    if @pet.update(pet_params)
+      redirect_to @pet, notice: "Pet was successfully updated."
+    else
+      render :edit, status: :unprocessable_entity
+    end
   end
 
   def new
@@ -32,16 +34,18 @@ class PetsController < ApplicationController
   end
 
   def create
-
     @pet = Pet.new(pet_params)
-    @pet.save
-    redirect_to @pet
+    if @pet.save
+      redirect_to @pet, notice: "Pet was successfully created."
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   def destroy
     @pet = Pet.find(params[:id])
     @pet.destroy
-    redirect_to pets_url, status: :see_other
+    redirect_to pets_url, status: :see_other, alert: "Pet was successfully deleted."
     # see_other is a 303 status code
   end
 

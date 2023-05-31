@@ -30,6 +30,13 @@ When using pagination my query returns `http://127.0.2.3:3000/pets?page=2` for p
 
 #### #3 Adding Validations
 
+I recently added database validation to the app to ensure data integrity and prevent invalid records from being saved.
+
+I added backend validation, front-end client validation to provide immediate feedback when user inputs incorrect information.
+
+I also incorporated toasts to display success and error messages.
+
+To ensure that these features work as expected, I wrote tests that check the validation logic and error messages
 
 #### #4 Error and success messages
 #### #5 Uploading images and files
