@@ -33,13 +33,34 @@ class PetsController < ApplicationController
     @pet = Pet.new
   end
 
+  # def create
+  #   @pet = Pet.new(pet_params)
+  #   if @pet.save
+  #     redirect_to @pet, notice: "Pet was successfully created."
+  #   else
+  #     render :new, status: :unprocessable_entity
+  #   end
+  # end
+
   def create
     @pet = Pet.new(pet_params)
+
+    # Upload the image to Cloudinary and get the secure_url
+    image_url = upload_image(params[:pet][:image])
+
+    # Assign the image_url to the @pet instance
+    @pet.picUrlSq = image_url
+
     if @pet.save
       redirect_to @pet, notice: "Pet was successfully created."
     else
       render :new, status: :unprocessable_entity
     end
+  end
+
+  def upload_image(image)
+    response = Cloudinary::Uploader.upload(image.path)
+    response["secure_url"]
   end
 
   def destroy
@@ -48,6 +69,8 @@ class PetsController < ApplicationController
     redirect_to pets_url, status: :see_other, alert: "Pet was successfully deleted."
     # see_other is a 303 status code
   end
+
+
 
   private
 

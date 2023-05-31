@@ -25,8 +25,16 @@
   <%= form.label :price %>
   <%= form.number_field :price %>
 
-  <%= form.label :picUrlSq %>
-  <%= form.text_field :picUrlSq %>
+  <%# <%= form.label :picUrlSq %>
+  <%# <%= form.text_field :picUrlSq %>
+
+  <% if controller_name == 'pets' && action_name == 'new' %>
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  <% elsif controller_name == 'pets' && action_name == 'edit' %>
+    <%= form.label :picUrlSq %>
+    <%= form.text_field :picUrlSq %>
+  <% end %>
 
   <%= form.label :description %>
   <%= form.text_area :description, rows: 5 %>

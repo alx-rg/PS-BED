@@ -43,6 +43,13 @@ I also incorporated toasts to display success on create, update or destroy.
 There's now also error messages.
 
 #### #5 Uploading images and files
+
+Using Cloudinary I was able to add a file upload when I create a new pet.
+
+The image file then gets sent to Cloudinary where a url is returned and added with all the necessary Pet information into the database.
+
+When a user views a pet they see the image, and in an edit situation, they can change or remove the url.
+
 #### #6 Adding payment gateways like Stripe
 #### #7 Sending emails
 #### #8 Respond to JSON
