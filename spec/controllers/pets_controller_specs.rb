@@ -31,6 +31,13 @@ RSpec.describe PetsController, type: :controller do
       # Test that there are more pets in the database than displayed on the first page
       expect(Pet.count).to be > 9
     end
+
+    describe "GET #index" do
+      it "returns all pets when the search query is empty" do
+        get :index, params: {search: ""}
+        expect(assigns(:pets)).to include(@pet1, @pet2)
+    end
+
   end
 
 end

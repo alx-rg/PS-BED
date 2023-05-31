@@ -36,3 +36,7 @@ When using pagination my query returns `http://127.0.2.3:3000/pets?page=2` for p
 #### #6 Adding payment gateways like Stripe
 #### #7 Sending emails
 #### #8 Respond to JSON
+
+#### #9 Weighted FUll Text Search
+
+I  implemented a weighted search feature in the app, which allows for more accurate and relevant search results based on the importance of different fields such as Name! To ensure the functionality works as expected, I added a test case to verify that the pets are returned in the correct order based on the assigned weights. Additionally, I made some changes to the database structure to support this new search feature.
