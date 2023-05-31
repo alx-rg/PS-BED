@@ -9,10 +9,12 @@ module PetsHelper
   end
 
   def priceless(pet)
-    if pet.price > 50
+    if pet.price && pet.price > 50
       content_tag(:strong, "Priceless")
-    else
+    elsif pet.price
       content_tag(:i, "#{number_to_currency(pet.price, precision: 0)}")
+    else
+      content_tag(:i, "N/A")
     end
   end
 

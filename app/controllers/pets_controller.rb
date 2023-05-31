@@ -5,9 +5,11 @@ class PetsController < ApplicationController
   # end
 
   def index
-    # When the user searches for a pet, the search method in the Pet model is called
-    # Pagination is also implemented here
-    @pets = Pet.search(params[:search]).page(params[:page]).per(9)
+    if params[:search].present?
+      @pets = Pet.search(params[:search]).page(params[:page]).per(9)
+    else
+      @pets = Pet.all.page(params[:page]).per(9)
+    end
   end
 
   def show
