@@ -15,8 +15,8 @@ Pet.create!([
     favoriteFood: "Raw Meat",
     picUrl: "https://www.dogbreedslist.info/uploads/dog-pictures/dachshund-2.jpg",
     price: 0.99999999e8,
-    picUrlSq: [],
-    description: "Simply the best doggo ever, there's nothing quite like him and that's why he's first in the DB. Obviously he's priceless like all the other doggos.. So money can't buy happiness.. But it could get you another doggo and they could play together",
+    picUrlSq: "http://www.dogbreedplus.com/dog_breeds/images/cute-rottweiler-puppy.jpg",
+    description: "The best doggo. A wonderful companion for people of all ages. Friendly, playful, and always ready for a walk.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 02:41:02.506406",
     updated_at: "2023-05-28 12:38:16.715979",
     fetch: true
@@ -29,8 +29,8 @@ Pet.create!([
     favoriteFood: "Chicken",
     picUrl: "https://www.dogbreedslist.info/uploads/dog-pictures/french-bulldog-2.jpg",
     price: 0.999e1,
-    picUrlSq: ["http://www.dogbreedplus.com/dog_breeds/images/cute-rottweiler-puppy.jpg"],
-    description: "Why did the Rottweiler sit on the watch? He wanted to be a watchdog!",
+    picUrlSq: "http://www.dogbreedplus.com/dog_breeds/images/cute-rottweiler-puppy.jpg",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 02:43:55.427027",
     updated_at: "2023-05-28 13:19:00.293640",
     fetch: false
@@ -43,8 +43,8 @@ Pet.create!([
     favoriteFood: "Pork heart",
     picUrl: "http://www.gpamass.com/s/img/emotionheader713297504.jpg",
     price: 0.999e1,
-    picUrlSq: ["https://www.collinsdictionary.com/images/thumb/greyhound_21701074_250.jpg"],
-    description: "His favorite joke? 'Why did the Greyhound sit in the shade? To avoid being a hot dog!'",
+    picUrlSq: "https://www.collinsdictionary.com/images/thumb/greyhound_21701074_250.jpg",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 02:46:40.734431",
     updated_at: "2023-05-28 02:46:40.734431",
     fetch: true
@@ -57,11 +57,11 @@ Pet.create!([
     favoriteFood: "Liver",
     picUrl: "http://www.gpamass.com/s/img/emotionheader713297504.jpg",
     price: 0.999e1,
-    picUrlSq: ["https://www.collinsdictionary.com/images/thumb/greyhound_21701074_250.jpg"],
-    description: "Fido is a Greyhound with a need for speed, but don't be fooled; he's also a pro at napping. When he's not dreaming of chasing rabbits or winning races, he's busy perfecting his stand-up comedy routine. His favorite joke? 'Why did the Greyhound sit in the shade? To avoid being a hot dog!'",
+    picUrlSq: "https://www.collinsdictionary.com/images/thumb/greyhound_21701074_250.jpg",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 02:46:40.734431",
     updated_at: "2023-05-28 02:46:40.734431",
-    fetch: nil
+    fetch: true
   },
   {
     name: "Santa's Little Helper",
@@ -71,11 +71,11 @@ Pet.create!([
     favoriteFood: "Pork",
     picUrl: "https://www.dogbreedslist.info/uploads/dog-pictures/dachshund-2.jpg",
     price: 0.999e1,
-    picUrlSq: ["http://via.placeholder.com/250x250"],
-    description: "Santa's Little Helper always gets a laugh when he says, 'I may be part Elf, but I'm a full-time treat inspector!'",
+    picUrlSq: "http://via.placeholder.com/250x250",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 11:34:05.458387",
     updated_at: "2023-05-28 11:34:05.458387",
-    fetch: nil
+    fetch: false
   },
   {
     name: "Alf",
@@ -85,11 +85,11 @@ Pet.create!([
     favoriteFood: "Cats",
     picUrl: "https://www.dogbreedslist.info/uploads/dog-pictures/pembroke-welsh-corgi-2.jpg",
     price: 0.5999e2,
-    picUrlSq: ["http://via.placeholder.com/250x250"],
-    description: "Alf loves to make his friends chuckle with his joke, 'Why did the Alien get a dog? To keep an eye on the neighborhood cats!'",
+    picUrlSq: "http://via.placeholder.com/250x250",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 11:34:15.981001",
     updated_at: "2023-05-28 11:34:15.981001",
-    fetch: nil
+    fetch: true
   },
   {
     name: "Bubba",
@@ -99,8 +99,8 @@ Pet.create!([
     favoriteFood: "Dragon",
     picUrl: "https://www.dogbreedslist.info/uploads/dog-pictures/yorkshire-terrier-2-2.jpg",
     price: 0.999e1,
-    picUrlSq: ["http://via.placeholder.com/250x250"],
-    description: "Bubba always gets a giggle when he tells his pals, 'I'm a Mastiff, but don't be scared, I only hunt for treats and cuddles!'",
+    picUrlSq: "http://via.placeholder.com/250x250",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 11:34:24.256693",
     updated_at: "2023-05-28 13:18:16.296343",
     fetch: false
@@ -113,8 +113,8 @@ Pet.create!([
     favoriteFood: "Raw Meat",
     picUrl: "https://www.dogbreedslist.info/uploads/dog-pictures/dachshund-2.jpg",
     price: 0.99999999e8,
-    picUrlSq: [],
-    description: "Simply the best doggo ever, there's nothing quite like him and that's why he's first in the DB. Obviously he's priceless like all the other doggos.. So money can't buy happiness.. But it could get you another doggo and they could play together",
+    picUrlSq: "http://www.dogbreedplus.com/dog_breeds/images/cute-rottweiler-puppy.jpg",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 02:41:02.506406",
     updated_at: "2023-05-28 12:38:16.715979",
     fetch: true
@@ -127,11 +127,11 @@ Pet.create!([
     favoriteFood: "Chicken",
     picUrl: "https://www.dogbreedslist.info/uploads/dog-pictures/french-bulldog-2.jpg",
     price: 0.999e1,
-    picUrlSq: ["http://www.dogbreedplus.com/dog_breeds/images/cute-rottweiler-puppy.jpg"],
-    description: "Why did the Rottweiler sit on the watch? He wanted to be a watchdog!",
+    picUrlSq: "http://www.dogbreedplus.com/dog_breeds/images/cute-rottweiler-puppy.jpg",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 02:43:55.427027",
     updated_at: "2023-05-28 13:19:00.293640",
-    fetch: false
+    fetch: true
   },
   {
     name: "Dido",
@@ -141,11 +141,11 @@ Pet.create!([
     favoriteFood: "Pork heart",
     picUrl: "http://www.gpamass.com/s/img/emotionheader713297504.jpg",
     price: 0.999e1,
-    picUrlSq: ["https://www.collinsdictionary.com/images/thumb/greyhound_21701074_250.jpg"],
-    description: "His favorite joke? 'Why did the Greyhound sit in the shade? To avoid being a hot dog!'",
+    picUrlSq: "https://www.collinsdictionary.com/images/thumb/greyhound_21701074_250.jpg",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 02:46:40.734431",
     updated_at: "2023-05-28 02:46:40.734431",
-    fetch: true
+    fetch: false
   },
   {
     name: "Fido",
@@ -155,11 +155,11 @@ Pet.create!([
     favoriteFood: "Liver",
     picUrl: "http://www.gpamass.com/s/img/emotionheader713297504.jpg",
     price: 0.999e1,
-    picUrlSq: ["https://www.collinsdictionary.com/images/thumb/greyhound_21701074_250.jpg"],
-    description: "Fido is a Greyhound with a need for speed, but don't be fooled; he's also a pro at napping. When he's not dreaming of chasing rabbits or winning races, he's busy perfecting his stand-up comedy routine. His favorite joke? 'Why did the Greyhound sit in the shade? To avoid being a hot dog!'",
+    picUrlSq: "https://www.collinsdictionary.com/images/thumb/greyhound_21701074_250.jpg",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 02:46:40.734431",
     updated_at: "2023-05-28 02:46:40.734431",
-    fetch: nil
+    fetch: false
   },
   {
     name: "Santa's Little Helper",
@@ -169,11 +169,11 @@ Pet.create!([
     favoriteFood: "Pork",
     picUrl: "https://www.dogbreedslist.info/uploads/dog-pictures/dachshund-2.jpg",
     price: 0.999e1,
-    picUrlSq: ["http://via.placeholder.com/250x250"],
-    description: "Santa's Little Helper always gets a laugh when he says, 'I may be part Elf, but I'm a full-time treat inspector!'",
+    picUrlSq: "http://via.placeholder.com/250x250",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 11:34:05.458387",
     updated_at: "2023-05-28 11:34:05.458387",
-    fetch: nil
+    fetch: false
   },
   {
     name: "Alf",
@@ -183,11 +183,11 @@ Pet.create!([
     favoriteFood: "Cats",
     picUrl: "https://www.dogbreedslist.info/uploads/dog-pictures/pembroke-welsh-corgi-2.jpg",
     price: 0.5999e2,
-    picUrlSq: ["http://via.placeholder.com/250x250"],
-    description: "Alf loves to make his friends chuckle with his joke, 'Why did the Alien get a dog? To keep an eye on the neighborhood cats!'",
+    picUrlSq: "http://via.placeholder.com/250x250",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 11:34:15.981001",
     updated_at: "2023-05-28 11:34:15.981001",
-    fetch: nil
+    fetch: false
   },
   {
     name: "Bubba",
@@ -197,8 +197,8 @@ Pet.create!([
     favoriteFood: "Dragon",
     picUrl: "https://www.dogbreedslist.info/uploads/dog-pictures/yorkshire-terrier-2-2.jpg",
     price: 0.999e1,
-    picUrlSq: ["http://via.placeholder.com/250x250"],
-    description: "Bubba always gets a giggle when he tells his pals, 'I'm a Mastiff, but don't be scared, I only hunt for treats and cuddles!'",
+    picUrlSq: "http://via.placeholder.com/250x250",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 11:34:24.256693",
     updated_at: "2023-05-28 13:18:16.296343",
     fetch: false
@@ -211,11 +211,11 @@ Pet.create!([
     favoriteFood: "Raw Meat",
     picUrl: "https://www.dogbreedslist.info/uploads/dog-pictures/dachshund-2.jpg",
     price: 0.99999999e8,
-    picUrlSq: [],
-    description: "Simply the best doggo ever, there's nothing quite like him and that's why he's first in the DB. Obviously he's priceless like all the other doggos.. So money can't buy happiness.. But it could get you another doggo and they could play together",
+    picUrlSq: "http://www.dogbreedplus.com/dog_breeds/images/cute-rottweiler-puppy.jpg",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 02:41:02.506406",
     updated_at: "2023-05-28 12:38:16.715979",
-    fetch: true
+    fetch: false
   },
   {
     name: "T-Rex rex",
@@ -225,8 +225,8 @@ Pet.create!([
     favoriteFood: "Chicken",
     picUrl: "https://www.dogbreedslist.info/uploads/dog-pictures/french-bulldog-2.jpg",
     price: 0.999e1,
-    picUrlSq: ["http://www.dogbreedplus.com/dog_breeds/images/cute-rottweiler-puppy.jpg"],
-    description: "Why did the Rottweiler sit on the watch? He wanted to be a watchdog!",
+    picUrlSq: "http://www.dogbreedplus.com/dog_breeds/images/cute-rottweiler-puppy.jpg",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 02:43:55.427027",
     updated_at: "2023-05-28 13:19:00.293640",
     fetch: false
@@ -239,11 +239,11 @@ Pet.create!([
     favoriteFood: "Pork heart",
     picUrl: "http://www.gpamass.com/s/img/emotionheader713297504.jpg",
     price: 0.999e1,
-    picUrlSq: ["https://www.collinsdictionary.com/images/thumb/greyhound_21701074_250.jpg"],
-    description: "His favorite joke? 'Why did the Greyhound sit in the shade? To avoid being a hot dog!'",
+    picUrlSq: "https://www.collinsdictionary.com/images/thumb/greyhound_21701074_250.jpg",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 02:46:40.734431",
     updated_at: "2023-05-28 02:46:40.734431",
-    fetch: true
+    fetch: false
   },
   {
     name: "Fido",
@@ -253,11 +253,11 @@ Pet.create!([
     favoriteFood: "Liver",
     picUrl: "http://www.gpamass.com/s/img/emotionheader713297504.jpg",
     price: 0.999e1,
-    picUrlSq: ["https://www.collinsdictionary.com/images/thumb/greyhound_21701074_250.jpg"],
-    description: "Fido is a Greyhound with a need for speed, but don't be fooled; he's also a pro at napping. When he's not dreaming of chasing rabbits or winning races, he's busy perfecting his stand-up comedy routine. His favorite joke? 'Why did the Greyhound sit in the shade? To avoid being a hot dog!'",
+    picUrlSq: "https://www.collinsdictionary.com/images/thumb/greyhound_21701074_250.jpg",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 02:46:40.734431",
     updated_at: "2023-05-28 02:46:40.734431",
-    fetch: nil
+    fetch: false
   },
   {
     name: "Santa's Little Helper",
@@ -267,11 +267,11 @@ Pet.create!([
     favoriteFood: "Pork",
     picUrl: "https://www.dogbreedslist.info/uploads/dog-pictures/dachshund-2.jpg",
     price: 0.999e1,
-    picUrlSq: ["http://via.placeholder.com/250x250"],
-    description: "Santa's Little Helper always gets a laugh when he says, 'I may be part Elf, but I'm a full-time treat inspector!'",
+    picUrlSq: "http://via.placeholder.com/250x250",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 11:34:05.458387",
     updated_at: "2023-05-28 11:34:05.458387",
-    fetch: nil
+    fetch: false
   },
   {
     name: "Alf",
@@ -281,11 +281,11 @@ Pet.create!([
     favoriteFood: "Cats",
     picUrl: "https://www.dogbreedslist.info/uploads/dog-pictures/pembroke-welsh-corgi-2.jpg",
     price: 0.5999e2,
-    picUrlSq: ["http://via.placeholder.com/250x250"],
-    description: "Alf loves to make his friends chuckle with his joke, 'Why did the Alien get a dog? To keep an eye on the neighborhood cats!'",
+    picUrlSq: "http://via.placeholder.com/250x250",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 11:34:15.981001",
     updated_at: "2023-05-28 11:34:15.981001",
-    fetch: nil
+    fetch: true
   },
   {
     name: "Bubba",
@@ -295,8 +295,8 @@ Pet.create!([
     favoriteFood: "Dragon",
     picUrl: "https://www.dogbreedslist.info/uploads/dog-pictures/yorkshire-terrier-2-2.jpg",
     price: 0.999e1,
-    picUrlSq: ["http://via.placeholder.com/250x250"],
-    description: "Bubba always gets a giggle when he tells his pals, 'I'm a Mastiff, but don't be scared, I only hunt for treats and cuddles!'",
+    picUrlSq: "http://via.placeholder.com/250x250",
+    description: "A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.A friendly dog. Great with children and other pets. Loves to play fetch and go for long walks in the park.",
     created_at: "2023-05-28 11:34:24.256693",
     updated_at: "2023-05-28 13:18:16.296343",
     fetch: false

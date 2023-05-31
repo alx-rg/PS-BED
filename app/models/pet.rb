@@ -6,7 +6,7 @@ class Pet < ApplicationRecord
   validates :price, numericality: { greater_than_or_equal_to: 0 }
   validates :picUrl, :picUrlSq, format: { with: /\A(http|https):\/\/\S+\z/ }
   validates :description, length: { minimum: 140 }
-  validates :fetch, presence: true
+  validates :fetch, presence: true, allow_blank: true
 
   def fetching?
     fetch || fetch.nil?
