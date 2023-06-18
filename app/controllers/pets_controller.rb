@@ -70,8 +70,6 @@ class PetsController < ApplicationController
     # see_other is a 303 status code
   end
 
-
-
   private
 
   def pet_params

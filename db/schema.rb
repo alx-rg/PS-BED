@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_31_222643) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_02_010903) do
+  create_table "payments", force: :cascade do |t|
+    t.decimal "amount"
+    t.string "currency"
+    t.string "status"
+    t.string "charge_id"
+    t.string "email"
+    t.string "customer"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "pets", force: :cascade do |t|
     t.string "name"
     t.string "race"
@@ -25,6 +36,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_31_222643) do
     t.datetime "updated_at", null: false
     t.boolean "fetch"
     t.string "image"
+    t.string "charge_id"
+    t.decimal "amount"
+    t.string "currency"
+    t.string "status"
+    t.string "email"
   end
 
 end

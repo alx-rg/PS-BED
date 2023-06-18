@@ -10,6 +10,16 @@
       <p class="description"><%= @pet.description %></p>
       <img class="image" src="<%= @pet.picUrlSq %>" alt="<%= @pet.name %>">
       <p>By the way, <%= loveFetch(@pet)%></p>
+      <label class="amount">
+        <span>Amount: <%= @pet.price %></span>
+      </label>
+      <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+        data-description="Pet Costs <%= @pet.price %>"
+        data-amount="<%= @pet.price * 100 %>"
+        data-locale="auto">
+      </script>
     </div>
   </div>
   <section class="admin">
