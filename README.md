@@ -1,7 +1,5 @@
 # PS project
 
-
-
 #### #1 Simple Search
 
 In this project, I implemented a simple search functionality for the `Pet` model to filter pets based on a given query. I added a class method called `search` in the `Pet` model that takes a query as an argument and returns pets with matching values in their `name`, `description`, `favoriteFood`, `breed`, or `race` fields. I used the `LIKE` operator along with the `LOWER()` function to perform a case-insensitive search across the specified fields.
@@ -27,7 +25,6 @@ There is a `First` and `Last` Button
 
 When using pagination my query returns `http://127.0.2.3:3000/pets?page=2` for page 2.
 
-
 #### #3 Adding Validations
 
 I recently added database validation to the app to ensure data integrity and prevent invalid records from being saved.
@@ -51,5 +48,11 @@ The image file then gets sent to Cloudinary where a url is returned and added wi
 When a user views a pet they see the image, and in an edit situation, they can change or remove the url.
 
 #### #6 Adding payment gateways like Stripe
+
+Using Stripe, a used is able to navigate to the pet they would like to purchase and go through the necessary steps to input their payment method along with their information in order to purchase the pet.
+
+Rather than setting up the pets on the Stripe website the data residing on the database was passed in to the Stripe system in order to get the correct amount based on the cost of each pet.
+
 #### #7 Sending emails
+
 #### #8 Respond to JSON
