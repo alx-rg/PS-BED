@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Thank you for your purchase, <%= @user.name %></h1>
+    <p>
+      You have successfully purchased a pet from Petes Pets website.<br>
+      Here are the details of your purchase:
+    </p>
+    <ul>
+      <li>Pet Name: <%= @pet.name %></li>
+      <li>Race: <%= @pet.race %></li>
+      <li>Breed: <%= @pet.breed %></li>
+      <li>Favorite Food: <%= @pet.favoriteFood %></li>
+      <li>Price: <%= @pet.price %></li>
+    </ul>
+    <p>
+      Here are some pictures of your new pet:
+      <br>
+      <img src="<%= @pet.picUrl %>" alt="<%= @pet.name %>">
+      <br>
+      <img src="<%= @pet.picUrlSq %>" alt="<%= @pet.name %>">
+    </p>
+    <p>
+      We hope you enjoy your new companion! If you have any questions or need further assistance,
+      feel free to reach out to us.
+    </p>
+    <p>Thank you for choosing your new pet!</p>
+  </body>
+</html>

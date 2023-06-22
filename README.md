@@ -51,8 +51,14 @@ When a user views a pet they see the image, and in an edit situation, they can c
 
 Using Stripe, a used is able to navigate to the pet they would like to purchase and go through the necessary steps to input their payment method along with their information in order to purchase the pet.
 
-Rather than setting up the pets on the Stripe website the data residing on the database was passed in to the Stripe system in order to get the correct amount based on the cost of each pet.
+Rather than setting up the pets on the Stripe website the data residing on the database was passed in to the Stripe API in order to get the correct amount based on the cost of each pet, once on the credit card page modal, the user enters their payment information to purchase the pet.
 
 #### #7 Sending emails
+
+To create the mailer for the emails that will be sent upon confirmation of a pet purchase, I created a mailer file named `pet_purchase_mailer.rb` in the `app/mailers` directory.
+
+Inside the mailer file, I defined a `purchase_confirmation` method to handle sending the email, passing in the pet details and buyer's email address. Additionally, I created an email view template called `purchase_confirmation.html.erb` in the `app/views/pet_purchase_mailer` directory, customizing it to display the pet information, pictures, and price in a visually appealing manner.
+
+Once payment is received, the confirmation email is sent to the customer.
 
 #### #8 Respond to JSON

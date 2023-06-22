@@ -21,6 +21,10 @@ class PaymentsController < ApplicationController
       success_url:  payments_success_url,
       cancel_url: payments_cancel_url
      )
+
+      # Send email to the buyer
+      PetPurchaseMailer.purchase_confirmation(@pet, current_user.email).deliver_now
+
      redirect_to session.url
   end
 
