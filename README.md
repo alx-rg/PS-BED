@@ -62,3 +62,9 @@ Inside the mailer file, I defined a `purchase_confirmation` method to handle sen
 Once payment is received, the confirmation email is sent to the customer.
 
 #### #8 Respond to JSON
+
+To provide JSON routes alongside the HTML routes, I added the `respond_to` block in the `PetsController` actions where I wanted to respond with JSON, such as index, show, destroy, new and create.
+
+I defined the JSON responses using render json: and specified the desired data or errors to be returned. I also set the appropriate status codes, such as :ok or :unprocessable_entity, depending on the action's outcome.
+
+To test the JSON routes, I used tools like Postman or cURL to make HTTP requests to the respective endpoints, ensuring I received the expected JSON responses with the correct status codes and data structure.
