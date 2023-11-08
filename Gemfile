@@ -13,6 +13,8 @@ gem 'bootstrap', '~> 5.1', '>= 5.1.3'
 
 gem 'cloudinary', '~> 1.22.0'
 
+gem 'sanitize', '~> 6.1'
+
 gem 'stripe'
 gem 'sinatra'
 

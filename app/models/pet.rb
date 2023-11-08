@@ -21,12 +21,19 @@ class Pet < ApplicationRecord
     end
   end
 
+  before_save :sanitize_fields
+
   private
 
   def birthday_cannot_be_in_the_future
     if birthday.present? && birthday > Date.today
       errors.add(:birthday, "cannot be in the future")
     end
+  end
+
+  def sanitize_fields
+    self.picUrlSq = Sanitize.fragment(picUrlSq, Sanitize::Config::RELAXED)
+    self.description = Sanitize.fragment(description, Sanitize::Config::RESTRICTED)
   end
 
 end

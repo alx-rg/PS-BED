@@ -1,5 +1,12 @@
 # PS project
 
+
+In this update, I added sanitation for user-generated content in both the `description` and `picUrlSq` (URL) fields of the Pet model using the Sanitize gem. The `sanitize_fields` method is called before saving a record, removing potentially harmful HTML or scripts.
+
+The `description` has a `Sanitize::Config::RESTRICTED` configuration that allows only very simple inline markup. No links, images, or block elements.
+
+The `picUrlSq` field has a `Sanitize::Config::RESTRICTED` configuration that allows images and tables, as well as safe CSS (although I'm already validating that the picUrlSq field contains valid HTTP or HTTPS URLs). Links are still limited to FTP, HTTP, HTTPS, and mailto protocols, while images are limited to HTTP and HTTPS. In this `RESTRICTED` mode, rel="nofollow" is not added to links., enhancing the security of the application by ensuring safe content and URLs are stored in the database.
+
 #### #1 Simple Search
 
 In this project, I implemented a simple search functionality for the `Pet` model to filter pets based on a given query. I added a class method called `search` in the `Pet` model that takes a query as an argument and returns pets with matching values in their `name`, `description`, `favoriteFood`, `breed`, or `race` fields. I used the `LIKE` operator along with the `LOWER()` function to perform a case-insensitive search across the specified fields.
